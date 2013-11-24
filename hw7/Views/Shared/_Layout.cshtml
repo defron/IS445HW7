@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="@Url.Content("~/css/screen.css")" rel="stylesheet" />
+        <title>IS445 Homework 7</title>
+    </head>
+    <body>
+        <div id="wrapper">
+            <header>
+            <h1>@ViewBag.Title</h1>
+                <hr />
+            </header>
+            <div id="border">
+                <nav>
+                    <ul>
+                        <li>@Html.ActionLink("Home", "Index")</li>
+                        <li>@Html.ActionLink("Web Form Demo", "Form")</li>
+                        <li>@Html.ActionLink("About Me", "About")</li>
+                    </ul>
+                </nav>
+                <div id="content">
+                    @RenderBody()
+                </div>
+            </div>
+            <footer>
+                <span>Kevin Thomer&copy; Contact Information:</span>
+                <address>
+                    <span><a href="mailto:Kevin.Thomer@student.csulb.edu">Email: Kevin.Thomer@student.csulb.edu</a></span>
+                    <span>Phone: (562) 281-5710</span>
+                </address>
+            </footer>
+        </div>
+    </body>
+</html>
