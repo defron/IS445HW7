@@ -120,6 +120,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="css\screen.css" />
     <Content Include="Global.asax" />
+    <Content Include="img\wooper.jpg" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
